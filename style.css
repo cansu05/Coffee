@@ -174,6 +174,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .about-img {
@@ -357,4 +358,93 @@ h4 {
 
 .footer-social i:first-child {
     margin-left: 70px
+}
+
+#menu-icon {
+    font-size: 25px;
+    display: none;
+    margin-left: 20px;
+}
+
+/* responsive menu*/
+@media only screen and (max-width:800px) {
+    .header-menu ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+        left: 0px;
+        background-color: rgba(240, 139, 121, 0.568);
+        width: 100%;
+        overflow: hidden;
+        transition: max-height .5s;
+    }
+
+    .header-menu ul li {
+        margin-right: 50px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .header-menu ul li a {
+        color: white;
+    }
+
+    .header-menu #menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+/* responsive about*/
+@media only screen and (max-width:990px) {
+    .about-img {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .about-text {
+        width: 100%;
+    }
+}
+
+/* responsive portfolio*/
+@media only screen and (max-width:990px) {
+    .portfolio .portfolio-item {
+        flex-basis: 50%;
+    }
+}
+
+@media only screen and (max-width:580px) {
+    .portfolio .portfolio-item {
+        flex-basis: 100%;
+    }
+}
+
+/* responsive contact*/
+@media only screen and (max-width:800px) {
+    .contact-content {
+        flex-direction: column;
+    }
+
+    .contact-item {
+        margin-top: 30px;
+    }
+
+    .contact-item p {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* responsive footer*/
+@media only screen and (max-width:700px) {
+    .footer-social i{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
 }
