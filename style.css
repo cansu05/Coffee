@@ -306,3 +306,55 @@ h4 {
     font-size: 14px;
     line-height: 33px;
 }
+
+/* footer */
+.footer h2 {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    color: #6a2b31;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 55px 0;
+}
+
+.footer h2::after {
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: #6a2b31;
+    margin: 0 auto;
+    display: block;
+    margin-top: 5px;
+}
+
+.footer {
+    background-color:#2c2727;
+}
+
+.footer-copyright {
+    color: white;
+    text-align: center;
+    flex-basis: 55%;
+    line-height: 2;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer-social i{
+    color: white;
+    margin-bottom: 50px;
+    font-size: 25px;
+    padding: 0 45px;
+}
+
+.footer-social i:first-child {
+    margin-left: 70px
+}
